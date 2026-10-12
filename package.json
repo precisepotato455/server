@@ -9,7 +9,10 @@
 		"check:format": "runx check --format",
 		"check:lint:all": "run-oxlint",
 		"test": "vitest",
-		"test:ci": "run-vitest-ci"
+		"test:ci": "run-vitest-ci",
+		"deploy": "turbo run build && turbo run migrate"
+	},
+
 	},
 	"devDependencies": {
 		"@babel/plugin-transform-explicit-resource-management": "8.0.1",
